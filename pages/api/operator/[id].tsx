@@ -24,13 +24,13 @@ export default function getOperatorById(req: OperatorIdNextApiRequest, res: Next
             iconAlt: 'beeline_logo'
         },
         {
-            id: 3,
+            id: 2,
             name: 'Теле2',
             iconSrc: 'https://www.protarif.info/images/sladeshow/tele2.png',
             iconAlt: 'tele2_logo'
         },
         {
-            id: 2,
+            id: 3,
             name: 'Мегафон Москва',
             iconSrc: 'https://www.protarif.info/images/sladeshow/megafon.png',
             iconAlt: 'megaphone_logo'
