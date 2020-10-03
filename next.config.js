@@ -1,5 +1,5 @@
 module.exports = {
     env: {
-        API_URL: 'http://localhost:3000'
+        API_URL: 'https://payment-terminal-next-ts.vercel.app/'
     }
 }
