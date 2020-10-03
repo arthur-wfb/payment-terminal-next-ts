@@ -109,7 +109,7 @@ function PaymentFormScreen(props) {
         const promise = new Promise((resolve, reject) => {
             setTimeout(async () => {
                 // Here should be a request to the server with data: props.selectedOperatorId, phoneNumber, sum
-                const response = await fetch('http://localhost:3000/api/payment');
+                const response = await fetch(`${process.env.API_URL}/api/payment`);
                 const json = await response.json();
                 if (json.result === Status.Success){
                     resolve(Status.Success);
@@ -174,7 +174,7 @@ function PaymentFormScreen(props) {
 }
 
 PaymentFormScreen.getInitialProps = async ({query}: OperatorNextPageContext) => {
-    const response = await fetch(`http://localhost:3000/api/operator/${query.id}`);
+    const response = await fetch(`${process.env.API_URL}/api/operator/${query.id}`);
     const json = await response.json();
     return {
         operator : json

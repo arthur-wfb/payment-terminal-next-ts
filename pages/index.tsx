@@ -17,7 +17,7 @@ function App(props: AppProps) {
 
   useEffect(() => {
     async function loadOperators(){
-      const response = await fetch('http://localhost:3000/api/operators');
+      const response = await fetch(`${process.env.API_URL}/api/operators`);
       const json = await response.json();
       setOperators(json.operators);
     }
@@ -41,7 +41,7 @@ App.getInitialProps = async ({req}: NextPageContext) => {
     return { operatorsFromServer: undefined }
   }
 
-  const response = await fetch('http://localhost:3000/api/operators');
+  const response = await fetch(`${process.env.API_URL}/api/operators`);
   const json = await response.json();
 
   return {
