@@ -89,8 +89,8 @@ function PaymentFormScreen(props) {
     async function sendRequest(event){
         event.preventDefault();
 
-        if ((phoneNumber.includes('_')) || (parseInt(sum) < 1) || (parseInt(sum) > 1000)){
-            if (phoneNumber.includes('_')){
+        if ((parseInt(phoneNumber) != 18) || (parseInt(sum) < 1) || (parseInt(sum) > 1000)){
+            if (parseInt(phoneNumber) != 18){
                 setPhoneNumberHint('Некорректная длина номера телефона');
             } else {
                 setPhoneNumberHint(null);
