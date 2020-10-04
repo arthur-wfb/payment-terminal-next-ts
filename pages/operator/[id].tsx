@@ -38,7 +38,7 @@ const Button = styled.button`
     text-decoration: none;
     color: black;
     
-    @media (max-width: 740px){
+    @media (max-width: 760px){
        width: 120px;
     }
 `
@@ -51,7 +51,7 @@ const BackButton = styled(Button)`
         background-image: linear-gradient(45deg, #f5f5f5 0%, #dadada 100%);
     }
     
-    @media (max-width: 740px){
+    @media (max-width: 760px){
         left: 20px;
     }
 `
@@ -64,7 +64,7 @@ const SubmitButton = styled(Button)`
         background-image: linear-gradient(45deg, #FFC107 0%, rgb(235, 136, 6) 100%);
     }
     
-    @media (max-width: 740px){
+    @media (max-width: 760px){
         right: 20px;
     }
 `

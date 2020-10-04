@@ -12,29 +12,25 @@ const ContainerBlock = styled.div`
     display: flex;
     flex-direction: column;
     
-    @media (max-width: 1024px){
+    @media (max-width: 1200px){
         width: 600px;
         height: 750px;
     }
-
-    @media (max-width: 740px){
+    
+     @media (max-width: 760px){
         width: auto;
         height: 100%;
         margin: 0;
         padding: 20px 20px;
     }
     
-    @media (max-height: 625px){
-       height: 530px;
-       width: 500px;
+    @media (max-height: 630px) and (min-width: 760px){
+        height: 550px;
+        width: 500px;
+        padding: 20px 50px;
+        margin: 50px auto;
     }
     
-    @media (max-height: 570px){
-        width: auto;
-        height: 100%;
-        margin: 0;
-        padding: 20px 20px;
-    }
 `
 
 interface ContainerProps {
